@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>CV</h1>
+
+      <h2>Cozma Cristian</h2>
+      <img src="Selfie.JPG" width="85" alt="Cristi">
+
+      <p id="job-title">Analist programator @ <span>SPCRPCIV MURES</span></p>
+    </div>
+
+    <ul id="top-menu-bar">
+      <li><a href="#" onclick="showHome()">Home</a></li>
+      <li><a href="#" onclick="showSkills()">Skills</a></li>
+      <li><a href="#" onclick="showProjects()">Projects</a></li>
+      <li><a href="#" onclick="showLanguages()">Languages</a></li>
+    </ul>
+  </header>
+
+
+
+  <section id="content">
+    <div id="side-menu">
+      <section>
+        <form action="">
+          <label for="e">Email</label>
+          <input type="email" id="e" name="em">
+          <input type="text" id="name" name="nume" placeholder="Your name">
+          <button>
+            Contact us
+          </button>
+      </section>
+      <section>
+        M2
+      </section>
+    </div>
+
+    <div id="main">
+
+      <div id="home" class="page">
+        <h2>Home</h2>
+        Bine ai venit. Aici poate este despre mine...
+      </div>
+
+      <div class="last-bar">
+        <div id="skills" class="page" style="display: none;">
+          <h2>Skills & Endorecements</h2>
+          <ul>
+            <li class="favorite">HTML</li>
+            <li class="favorite">CSS</li>
+            <li class="favorite">Scriu repede la tastatura</li>
+            <li>Am memorie vizuala buna</li>
+          </ul>
+
+        </div>
+
+        <div id="projects" class="page" style="display: none;">
+          <h2>Projects</h2>
+          multe... iti zic dupa.
+        </div>
+
+
+        <div id="languages" class="page" style="display: none;">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <tr>
+              <td>Engleza</td>
+              <td>mediu</td>
+            </tr>
+            <tr>
+              <td>Maghiara</td>
+              <td>bine</td>
+            </tr>
+          </table>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a target="_blank" href="https://fasttrackit.org/curs-web-cluj-napoca/">FastTrackIT</a>
+  </footer>
+
+  <script src="functions.js"></script>
+
+  <script>
+    /*
+    console.info("Salut!");
+    var name = "Cozma Cristian";
+    console.info(name)
+    var skills = ["html", "css", "js"];
+    console.info(skills)
+    */
+  </script>
+</body>
+
+</html>
