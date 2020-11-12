@@ -14,6 +14,16 @@ function hideAllPages() {
     hide("skills");
     hide("projects");
     hide("languages");
+
+    var pages = document.querySelectorAll(".page");
+    //for(initializare; conditie; post execute)
+    for (var i = 0; i < pages.length; i++) {
+        var page = pages[i];
+        var id = page.id;
+        console.info("i=", i, id, page);
+        hide(id);
+    }
+
 }
 
 function showHome() {
@@ -23,7 +33,7 @@ function showHome() {
 
 function showSkills() {
     hideAllPages();
-    document.getElementById('skills').style.display = '';
+    document.getElementById('skills').style.display = "";
 }
 
 function showProjects() {
