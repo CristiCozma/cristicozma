@@ -31,8 +31,8 @@ function showProjects() {
 }
 
 function showLanguages() {
-    document.getElementById('projects').style.display = "none";
-    document.getElementById('home').style.display = "none";
-    document.getElementById('skills').style.display = "none";
+    hide("projects");
+    hide("home");
+    hide("skills");
     document.getElementById("languages").style.display = "";
 }
