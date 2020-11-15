@@ -24,6 +24,11 @@ html {
     display: flex;
     flex-direction: column;
     }
+
+img {
+    border-radius: 90px 90px 30px 30px;
+}
+
 header, body > section {
     flex: 1;
     }
