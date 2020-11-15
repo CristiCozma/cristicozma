@@ -25,6 +25,11 @@ html {
     flex-direction: column;
     }
 
+h1 {
+    font-family: fantasy;
+    text-align: center;
+}
+
 img {
     border-radius: 90px 90px 30px 30px;
 }
@@ -46,6 +51,7 @@ header, body > section {
 }
 #main {
     flex: 4;
+    margin: 5px;
 }
 footer {
     min-height: 20px;
@@ -74,6 +80,7 @@ body{
     text-align: center;
     background-color: #334455;
     color: #fff;
+    border-radius: 40px 40px 5px 5px;
 }
 #top-menu-bar li{
     display: inline; 
@@ -94,6 +101,8 @@ body{
 #top-menu-bar a:hover {
 color: #334455;
 background-color: #fff;
+font-weight: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page{
@@ -101,11 +110,16 @@ background-color: #fff;
     margin: 16px 0;
     padding: 24px;
     box-shadow: 0 0 0 1px rgba(0,0,0.15), 0 2px 3px rgba(0,0,0,.2);
-    border-radius: 2px;
+    border-radius: 20px;
 }
 
 li {
   color: blue; 
+}
+
+#message {
+    height: 100px;
+    text-align: left;
 }
 
 .favorite {
