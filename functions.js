@@ -43,10 +43,25 @@ function initMenu() {
         var link = e.target;
         if (link.matches("#top-menu-bar a")) {
             var id = link.innerHTML.toLowerCase();
-            showElement(id)
+            showElement(id);
         }
-    })
+    });
 }
 
 initMenu();
 
+showElement("skills");
+
+var skills = [
+    "HTML",
+    "CSS",
+    "JS"
+];
+
+var skillsLi = skills.map(function (skill) {
+    return "<li>" + skill + "</li>";
+});
+
+//TODO add "favorite" skill
+var ul = document.querySelector("#skills ul");
+ul.innerHTML = skillsLi.join("");
