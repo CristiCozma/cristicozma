@@ -35,5 +35,18 @@ function hideAllPages() {
 
 function showElement(pageId) {
     hideAllPages();
-    document.getElementById(pageId).style.display = "";
+    showPage(pageId);
 }
+
+function initMenu() {
+    document.addEventListener("click", function (e) {
+        var link = e.target;
+        if (link.matches("#top-menu-bar a")) {
+            var id = link.innerHTML.toLowerCase();
+            showElement(id)
+        }
+    })
+}
+
+initMenu();
+
