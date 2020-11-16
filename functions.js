@@ -33,22 +33,7 @@ function hideAllPages() {
     }
 }
 
-function showHome() {
+function showElement(pageId) {
     hideAllPages();
-    showPage("home");
-}
-
-function showSkills() {
-    hideAllPages();
-    showPage("skills");
-}
-
-function showProjects() {
-    hideAllPages();
-    showPage("projects");
-}
-
-function showLanguages() {
-    hideAllPages();
-    showPage("languages");
+    document.getElementById(pageId).style.display = "";
 }
