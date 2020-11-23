@@ -1,3 +1,5 @@
+var activePage = "skills";
+
 function hide(id) {
     //document.getElementById(id).style.display = "none";
     var el = document.getElementById(id);
@@ -17,25 +19,16 @@ function showPage(id) {
         console.error("elementul nu exista", id)
 }
 
-function hideAllPages() {
-    hide("home");
-    hide("skills");
-    hide("projects");
-    hide("languages");
 
-    var pages = document.querySelectorAll(".page");
-    //for(initializare; conditie; post execute)
-    for (var i = 0; i < pages.length; i++) {
-        var page = pages[i];
-        var id = page.id;
-        console.info("i=", i, id, page);
-        hide(id);
-    }
+function hidePreviousPage() {
+    hide(activePage);
 }
 
 function showElement(pageId) {
-    hideAllPages();
+    //hideAllPages();
+    hidePreviousPage();
     showPage(pageId);
+    activePage = pageId;
 }
 
 function initMenu() {
@@ -50,7 +43,7 @@ function initMenu() {
 
 initMenu();
 
-showElement("skills");
+showElement(activePage);
 
 var skills = [
     "HTML",
