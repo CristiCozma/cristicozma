@@ -11,14 +11,14 @@ function hide(id) {
     }
 }
 
-function showPage(id) {
+function show(id) {
     var el = document.getElementById(id);
     if (el) {
         el.style.display = "";
-    } else
+    } else {
         console.error("elementul nu exista", id)
+    }
 }
-
 
 function hidePreviousPage() {
     hide(activePage);
@@ -26,10 +26,10 @@ function hidePreviousPage() {
     link.classList.remove("active");
 }
 
-function showElement(pageId) {
+function showPage(pageId) {
     //hideAllPages();
     hidePreviousPage();
-    showPage(pageId);
+    show(pageId);
     var link = document.querySelector(`#top-menu-bar a[data-page="${pageId}"]`);
     link.classList.add("active");
     activePage = pageId;
@@ -40,23 +40,23 @@ function initMenu() {
         var link = e.target;
         if (link.matches("#top-menu-bar a")) {
             var id = link.getAttribute("data-page");
-            showElement(id);
+            showPage(id);
         }
     });
 }
 
 initMenu();
 
-showElement(activePage);
+showPage(activePage);
 
 var skills = [
-    "HTML",
-    "CSS",
-    "JS"
+    { name: "HTML", endorsements: 15 },
+    { name: "CSS", endorsements: 5 },
+    { name: "JS", endorsements: 21 }
 ];
-
 var skillsLi = skills.map(function (skill) {
-    return "<li>" + skill + "</li>";
+    var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
+    return "<li>" + skill.name + endorsements + "</li>";
 });
 
 //TODO add "favorite" skill

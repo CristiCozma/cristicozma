@@ -114,13 +114,19 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
 }
 
-li {
-  color: blue; 
-}
 
 #message {
     height: 100px;
     text-align: left;
+}
+
+#skills li {
+    font-weight: 800;
+}
+
+#skills li span {
+    font-weight: 200;
+    color: gray;
 }
 
 .favorite {
