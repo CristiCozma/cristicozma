@@ -120,19 +120,14 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
 
-#skills li {
-    font-weight: 800;
-}
-
 #skills li span {
     font-weight: 200;
     color: gray;
 }
 
 .favorite {
-    background-color: yellow; 
-    font-style: italic;
     color: blueviolet;
+    font-weight: 800;
 }
 
 
